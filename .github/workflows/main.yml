@@ -10,4 +10,6 @@ jobs:
         run: ls -al
       - name: Setup PHP Action
         uses: shivammathur/setup-php@2.25.1
+      - name: Install dependencies
+        run: composer install --prefer-dist
 
